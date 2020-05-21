@@ -1,0 +1,733 @@
+2020-04-15 17:29:22,772 - root - INFO - START
+2020-04-15 17:29:22,772 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 14567- debug_mode : False
+2020-04-15 17:29:22,806 - root - INFO - Max epoch is set to 50
+2020-04-15 17:29:22,806 - root - INFO - START TRAINING
+2020-04-15 17:29:22,806 - root - INFO - *******************************************
+2020-04-15 17:29:22,806 - root - INFO - Parameter Settings: 
+2020-04-15 17:29:22,806 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-04-15 17:29:22,815 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-04-15 17:29:22,815 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-04-15 17:29:22,815 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-04-15 17:29:22,815 - root - INFO - Regularizers = [0.0, 0.001]
+2020-04-15 17:29:22,815 - root - INFO - *******************************************
+2020-04-15 17:30:29,882 - root - INFO - final_epoch_loss: -0.2101204053672983, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.01, regularizer: 0.0
+2020-04-15 17:32:29,144 - root - INFO - val_loss, 1861.3440198190015
+2020-04-15 17:33:43,655 - root - INFO - final_epoch_loss: -0.2554886706799041, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.005
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.005, regularizer: 0.0
+2020-04-15 17:35:59,837 - root - INFO - val_loss, 1790.2029874731431
+2020-04-15 17:37:34,882 - root - INFO - final_epoch_loss: -0.26880477352124704, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.0025, regularizer: 0.0
+2020-04-15 17:40:09,068 - root - INFO - val_loss, 1762.7502549926835
+2020-04-15 17:41:33,093 - root - INFO - final_epoch_loss: -0.2738372425029751, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.00125, regularizer: 0.0
+2020-04-15 17:43:52,028 - root - INFO - val_loss, 1796.8832426129795
+2020-04-15 17:45:09,403 - root - INFO - final_epoch_loss: -0.2765908392345291, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.000625, regularizer: 0.0
+2020-04-15 17:47:07,535 - root - INFO - val_loss, 1749.3424892460473
+2020-04-15 17:48:20,391 - root - INFO - final_epoch_loss: -0.27788086026508846, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.0003125, regularizer: 0.0
+2020-04-15 17:50:18,208 - root - INFO - val_loss, 1747.304209578434
+2020-04-15 17:51:31,610 - root - INFO - final_epoch_loss: -0.2784142886779008, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.00015625, regularizer: 0.0
+2020-04-15 17:53:29,408 - root - INFO - val_loss, 1764.289086400718
+2020-04-15 17:54:43,180 - root - INFO - final_epoch_loss: -0.278841920282322, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 7.8125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 7.8125e-05, regularizer: 0.0
+2020-04-15 17:56:42,049 - root - INFO - val_loss, 1758.1004977019363
+2020-04-15 17:57:55,555 - root - INFO - final_epoch_loss: -0.27890705575327607, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 3.90625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 3.90625e-05, regularizer: 0.0
+2020-04-15 17:59:54,171 - root - INFO - val_loss, 1759.8380096531491
+2020-04-15 18:01:07,627 - root - INFO - final_epoch_loss: -0.2789637611055647, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 1.953125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 1.953125e-05, regularizer: 0.0
+2020-04-15 18:03:06,464 - root - INFO - val_loss, 1763.0996286044126
+2020-04-15 18:04:21,608 - root - INFO - final_epoch_loss: -0.21152966986374774, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.01, regularizer: 0.001
+2020-04-15 18:06:19,663 - root - INFO - val_loss, 1915.0862915341966
+2020-04-15 18:07:35,219 - root - INFO - final_epoch_loss: -0.2576459139009639, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.005
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.005, regularizer: 0.001
+2020-04-15 18:09:32,136 - root - INFO - val_loss, 1690.4489806935244
+2020-04-15 18:10:46,592 - root - INFO - final_epoch_loss: -0.2718116199483967, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.0025, regularizer: 0.001
+2020-04-15 18:12:44,463 - root - INFO - val_loss, 1804.9006556816635
+2020-04-15 18:13:57,579 - root - INFO - final_epoch_loss: -0.2779046311931869, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.00125, regularizer: 0.001
+2020-04-15 18:15:57,908 - root - INFO - val_loss, 1781.8699641965768
+2020-04-15 18:17:07,874 - root - INFO - final_epoch_loss: -0.28068708653298724, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.000625, regularizer: 0.001
+2020-04-15 18:19:04,880 - root - INFO - val_loss, 1782.0293912319094
+2020-04-15 18:20:16,024 - root - INFO - final_epoch_loss: -0.28195460944059697, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.0003125, regularizer: 0.001
+2020-04-15 18:22:13,507 - root - INFO - val_loss, 1759.4622306384344
+2020-04-15 18:23:23,321 - root - INFO - final_epoch_loss: -0.28279725405323597, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.00015625, regularizer: 0.001
+2020-04-15 18:25:21,694 - root - INFO - val_loss, 1740.4862218902908
+2020-04-15 18:26:32,164 - root - INFO - final_epoch_loss: -0.28312330007666847, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 7.8125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 7.8125e-05, regularizer: 0.001
+2020-04-15 18:28:29,317 - root - INFO - val_loss, 1750.8656327658168
+2020-04-15 18:29:39,626 - root - INFO - final_epoch_loss: -0.283264399129357, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 3.90625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 45, lr: 3.90625e-05, regularizer: 0.001
+2020-04-15 18:31:36,358 - root - INFO - val_loss, 1751.4907358928644
+2020-04-15 18:32:46,913 - root - INFO - final_epoch_loss: -0.28337743608920857, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 1.953125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 50, lr: 1.953125e-05, regularizer: 0.001
+2020-04-15 18:34:43,239 - root - INFO - val_loss, 1753.8544944095781
+2020-04-15 18:35:53,241 - root - INFO - final_epoch_loss: -0.053350145032785776, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.05, regularizer: 0.0
+2020-04-15 18:37:48,704 - root - INFO - val_loss, 2771.506021431324
+2020-04-15 18:38:59,442 - root - INFO - final_epoch_loss: -0.2603551801933928, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.025, regularizer: 0.0
+2020-04-15 18:40:54,200 - root - INFO - val_loss, 1851.445752217562
+2020-04-15 18:42:05,127 - root - INFO - final_epoch_loss: -0.31516457093125994, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.0125, regularizer: 0.0
+2020-04-15 18:44:00,611 - root - INFO - val_loss, 1729.7353274456032
+2020-04-15 18:45:12,628 - root - INFO - final_epoch_loss: -0.33178688390962496, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.00625, regularizer: 0.0
+2020-04-15 18:47:06,750 - root - INFO - val_loss, 1772.785090084699
+2020-04-15 18:48:18,925 - root - INFO - final_epoch_loss: -0.33957612932524606, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.003125, regularizer: 0.0
+2020-04-15 18:50:12,805 - root - INFO - val_loss, 1720.166760339993
+2020-04-15 18:51:24,821 - root - INFO - final_epoch_loss: -0.3436732858789104, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.0015625, regularizer: 0.0
+2020-04-15 18:53:19,944 - root - INFO - val_loss, 1738.3850168552494
+2020-04-15 18:54:31,826 - root - INFO - final_epoch_loss: -0.3456033624936151, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.00078125, regularizer: 0.0
+2020-04-15 18:56:25,580 - root - INFO - val_loss, 1744.0602413499578
+2020-04-15 18:57:37,046 - root - INFO - final_epoch_loss: -0.346572834202124, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 0.000390625, regularizer: 0.0
+2020-04-15 18:59:31,459 - root - INFO - val_loss, 1731.0839208541454
+2020-04-15 19:00:43,450 - root - INFO - final_epoch_loss: -0.34729369874787697, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001953125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 0.0001953125, regularizer: 0.0
+2020-04-15 19:02:37,277 - root - INFO - val_loss, 1720.138382965455
+2020-04-15 19:03:48,606 - root - INFO - final_epoch_loss: -0.3474887631023089, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 9.765625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 9.765625e-05, regularizer: 0.0
+2020-04-15 19:05:41,886 - root - INFO - val_loss, 1729.112957350169
+2020-04-15 19:06:55,079 - root - INFO - final_epoch_loss: -0.04102184421397063, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.05, regularizer: 0.001
+2020-04-15 19:08:49,745 - root - INFO - val_loss, 1847.1587703612017
+2020-04-15 19:10:03,184 - root - INFO - final_epoch_loss: -0.2524865083183155, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.025, regularizer: 0.001
+2020-04-15 19:11:56,306 - root - INFO - val_loss, 1810.6581870567902
+2020-04-15 19:13:09,072 - root - INFO - final_epoch_loss: -0.30737788394406323, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.0125, regularizer: 0.001
+2020-04-15 19:15:04,662 - root - INFO - val_loss, 1768.2056222188817
+2020-04-15 19:16:17,660 - root - INFO - final_epoch_loss: -0.3207473928208342, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.00625, regularizer: 0.001
+2020-04-15 19:18:13,005 - root - INFO - val_loss, 1721.496589095081
+2020-04-15 19:19:26,135 - root - INFO - final_epoch_loss: -0.326890462824634, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.003125, regularizer: 0.001
+2020-04-15 19:21:21,357 - root - INFO - val_loss, 1741.6744145457326
+2020-04-15 19:22:33,364 - root - INFO - final_epoch_loss: -0.330094225363422, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.0015625, regularizer: 0.001
+2020-04-15 19:24:27,747 - root - INFO - val_loss, 1769.2180411213574
+2020-04-15 19:25:40,523 - root - INFO - final_epoch_loss: -0.3316517068314871, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.00078125, regularizer: 0.001
+2020-04-15 19:27:35,506 - root - INFO - val_loss, 1750.5179480703785
+2020-04-15 19:28:47,794 - root - INFO - final_epoch_loss: -0.3324606842183657, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 0.000390625, regularizer: 0.001
+2020-04-15 19:30:45,070 - root - INFO - val_loss, 1728.7128812001527
+2020-04-15 19:31:57,422 - root - INFO - final_epoch_loss: -0.3328394286107016, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001953125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 45, lr: 0.0001953125, regularizer: 0.001
+2020-04-15 19:33:52,747 - root - INFO - val_loss, 1745.1975925215281
+2020-04-15 19:35:05,058 - root - INFO - final_epoch_loss: -0.3330646690891217, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 9.765625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 50, lr: 9.765625e-05, regularizer: 0.001
+2020-04-15 19:37:00,393 - root - INFO - val_loss, 1738.1906747667795
+2020-04-15 19:38:10,225 - root - INFO - final_epoch_loss: 0.26992146265408634, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.1, regularizer: 0.0
+2020-04-15 19:40:07,555 - root - INFO - val_loss, 17803.26936688263
+2020-04-15 19:41:17,760 - root - INFO - final_epoch_loss: -0.1252426717097992, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.05, regularizer: 0.0
+2020-04-15 19:43:14,324 - root - INFO - val_loss, 3079.224995385753
+2020-04-15 19:44:24,627 - root - INFO - final_epoch_loss: -0.29051385490749854, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.025, regularizer: 0.0
+2020-04-15 19:46:23,970 - root - INFO - val_loss, 1756.1131832683009
+2020-04-15 19:47:33,597 - root - INFO - final_epoch_loss: -0.3200363425097165, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.0125, regularizer: 0.0
+2020-04-15 19:49:31,160 - root - INFO - val_loss, 1794.2477118991612
+2020-04-15 19:50:40,809 - root - INFO - final_epoch_loss: -0.33020155365002973, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.00625, regularizer: 0.0
+2020-04-15 19:52:38,504 - root - INFO - val_loss, 1772.2857732025686
+2020-04-15 19:53:47,617 - root - INFO - final_epoch_loss: -0.33512900727054545, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.003125, regularizer: 0.0
+2020-04-15 19:55:45,849 - root - INFO - val_loss, 1773.5054135003834
+2020-04-15 19:56:54,758 - root - INFO - final_epoch_loss: -0.33769101896927556, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.0015625, regularizer: 0.0
+2020-04-15 19:58:51,925 - root - INFO - val_loss, 1767.2852358889681
+2020-04-15 20:00:00,955 - root - INFO - final_epoch_loss: -0.33902345262183486, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 0.00078125, regularizer: 0.0
+2020-04-15 20:01:57,758 - root - INFO - val_loss, 1752.608596499824
+2020-04-15 20:03:07,759 - root - INFO - final_epoch_loss: -0.33973920355970394, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 0.000390625, regularizer: 0.0
+2020-04-15 20:05:05,804 - root - INFO - val_loss, 1762.242134818331
+2020-04-15 20:06:15,157 - root - INFO - final_epoch_loss: -0.3400697224695264, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001953125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 0.0001953125, regularizer: 0.0
+2020-04-15 20:08:10,486 - root - INFO - val_loss, 1757.244785608803
+2020-04-15 20:09:21,298 - root - INFO - final_epoch_loss: 0.28059270219230414, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.1, regularizer: 0.001
+2020-04-15 20:11:17,399 - root - INFO - val_loss, 23353.88192041711
+2020-04-15 20:12:28,678 - root - INFO - final_epoch_loss: -0.11698603933456687, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.05, regularizer: 0.001
+2020-04-15 20:14:24,418 - root - INFO - val_loss, 4587.817063273693
+2020-04-15 20:15:37,488 - root - INFO - final_epoch_loss: -0.2848833978659552, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.025, regularizer: 0.001
+2020-04-15 20:17:33,144 - root - INFO - val_loss, 1983.5271973180686
+2020-04-15 20:18:45,666 - root - INFO - final_epoch_loss: -0.3178518003862323, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.0125, regularizer: 0.001
+2020-04-15 20:20:40,812 - root - INFO - val_loss, 1779.5795839829132
+2020-04-15 20:21:53,932 - root - INFO - final_epoch_loss: -0.3284557142529551, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.00625, regularizer: 0.001
+2020-04-15 20:23:50,456 - root - INFO - val_loss, 1732.1867568024886
+2020-04-15 20:25:03,858 - root - INFO - final_epoch_loss: -0.333105158956565, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.003125, regularizer: 0.001
+2020-04-15 20:26:59,178 - root - INFO - val_loss, 1740.6719376231379
+2020-04-15 20:28:13,545 - root - INFO - final_epoch_loss: -0.33573118662674917, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.0015625, regularizer: 0.001
+2020-04-15 20:30:09,412 - root - INFO - val_loss, 1750.48780859736
+2020-04-15 20:31:22,964 - root - INFO - final_epoch_loss: -0.33701090051131394, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 0.00078125, regularizer: 0.001
+2020-04-15 20:33:17,418 - root - INFO - val_loss, 1752.2536952559472
+2020-04-15 20:34:31,293 - root - INFO - final_epoch_loss: -0.33782032385240984, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 45, lr: 0.000390625, regularizer: 0.001
+2020-04-15 20:36:25,958 - root - INFO - val_loss, 1748.4743544415805
+2020-04-15 20:37:39,863 - root - INFO - final_epoch_loss: -0.3378546711711483, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001953125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 50, lr: 0.0001953125, regularizer: 0.001
+2020-04-15 20:39:34,792 - root - INFO - val_loss, 1749.5934857839675
+2020-04-15 20:40:46,717 - root - INFO - final_epoch_loss: 0.7801197952669086, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.2, regularizer: 0.0
+2020-04-15 20:42:41,109 - root - INFO - val_loss, 2997.2588126325636
+2020-04-15 20:43:52,313 - root - INFO - final_epoch_loss: 0.17563861255971217, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.1, regularizer: 0.0
+2020-04-15 20:45:46,577 - root - INFO - val_loss, 81358.74436207075
+2020-04-15 20:46:58,229 - root - INFO - final_epoch_loss: -0.172968587543076, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.05, regularizer: 0.0
+2020-04-15 20:48:52,432 - root - INFO - val_loss, 2785.6370289812767
+2020-04-15 20:50:04,320 - root - INFO - final_epoch_loss: -0.31144648029660904, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.025, regularizer: 0.0
+2020-04-15 20:51:59,945 - root - INFO - val_loss, 1871.0886294507586
+2020-04-15 20:53:12,448 - root - INFO - final_epoch_loss: -0.3369380038743483, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.0125, regularizer: 0.0
+2020-04-15 20:55:06,437 - root - INFO - val_loss, 1927.8885500138817
+2020-04-15 20:56:18,192 - root - INFO - final_epoch_loss: -0.3479953018934217, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.00625, regularizer: 0.0
+2020-04-15 20:58:12,519 - root - INFO - val_loss, 1842.2436603999993
+2020-04-15 20:59:24,677 - root - INFO - final_epoch_loss: -0.3533148823753852, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.003125, regularizer: 0.0
+2020-04-15 21:01:18,604 - root - INFO - val_loss, 1871.524406555378
+2020-04-15 21:02:29,935 - root - INFO - final_epoch_loss: -0.3555656497487585, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 0.0015625, regularizer: 0.0
+2020-04-15 21:04:24,788 - root - INFO - val_loss, 1856.9150434028695
+2020-04-15 21:05:36,281 - root - INFO - final_epoch_loss: -0.3570586413799124, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 0.00078125, regularizer: 0.0
+2020-04-15 21:07:32,090 - root - INFO - val_loss, 1858.2377058877298
+2020-04-15 21:08:44,168 - root - INFO - final_epoch_loss: -0.357883250781598, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 0.000390625, regularizer: 0.0
+2020-04-15 21:10:41,064 - root - INFO - val_loss, 1866.411278275306
+2020-04-15 21:11:53,511 - root - INFO - final_epoch_loss: 0.7559152145990888, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.2, regularizer: 0.001
+2020-04-15 21:13:50,715 - root - INFO - val_loss, 2661.803743811082
+2020-04-15 21:15:02,985 - root - INFO - final_epoch_loss: 0.22522406791823824, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.1, regularizer: 0.001
+2020-04-15 21:17:01,056 - root - INFO - val_loss, 12699.970156680714
+2020-04-15 21:18:13,445 - root - INFO - final_epoch_loss: -0.13635870793528626, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.05, regularizer: 0.001
+2020-04-15 21:20:10,864 - root - INFO - val_loss, 2216.250896702434
+2020-04-15 21:21:22,411 - root - INFO - final_epoch_loss: -0.26999519653760523, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.025, regularizer: 0.001
+2020-04-15 21:23:20,355 - root - INFO - val_loss, 1872.5241029245324
+2020-04-15 21:24:31,372 - root - INFO - final_epoch_loss: -0.28871938419876664, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.0125, regularizer: 0.001
+2020-04-15 21:26:29,469 - root - INFO - val_loss, 1873.6245989179647
+2020-04-15 21:27:39,837 - root - INFO - final_epoch_loss: -0.2958652266223012, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.00625, regularizer: 0.001
+2020-04-15 21:29:38,606 - root - INFO - val_loss, 1809.036042459327
+2020-04-15 21:30:49,371 - root - INFO - final_epoch_loss: -0.29939137763194457, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.003125, regularizer: 0.001
+2020-04-15 21:32:48,783 - root - INFO - val_loss, 1709.5237619532306
+2020-04-15 21:33:59,000 - root - INFO - final_epoch_loss: -0.30093596288436697, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 0.0015625, regularizer: 0.001
+2020-04-15 21:35:57,000 - root - INFO - val_loss, 1786.8916507776794
+2020-04-15 21:37:06,478 - root - INFO - final_epoch_loss: -0.3016457081921683, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 45, lr: 0.00078125, regularizer: 0.001
+2020-04-15 21:39:04,584 - root - INFO - val_loss, 1765.7215790376208
+2020-04-15 21:40:13,305 - root - INFO - final_epoch_loss: -0.30216741084142495, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 50, lr: 0.000390625, regularizer: 0.001
+2020-04-15 21:42:10,841 - root - INFO - val_loss, 1769.9132875448531
+2020-04-15 21:42:10,842 - root - INFO - DONE

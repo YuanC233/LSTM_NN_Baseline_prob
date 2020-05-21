@@ -1,0 +1,40 @@
+2020-04-16 00:45:13,925 - root - INFO - START
+2020-04-16 00:45:13,926 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 14567- debug_mode : False
+2020-04-16 00:45:13,960 - root - INFO - Max epoch is set to 15
+2020-04-16 00:45:13,960 - root - INFO - START TRAINING
+2020-04-16 00:45:13,960 - root - INFO - *******************************************
+2020-04-16 00:45:13,960 - root - INFO - Parameter Settings: 
+2020-04-16 00:45:13,960 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-04-16 00:45:13,964 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-04-16 00:45:13,964 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-04-16 00:45:13,964 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-04-16 00:45:13,965 - root - INFO - Regularizers = [0.0, 0.001]
+2020-04-16 00:45:13,965 - root - INFO - *******************************************
+2020-04-16 00:46:16,363 - root - INFO - final_epoch_loss: -0.20973206329948574, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+), epoch: 5, lr: 0.01, regularizer: 0
+2020-04-16 00:48:03,360 - root - INFO - val_loss, 1886.5870349962465
+2020-04-16 00:49:02,499 - root - INFO - final_epoch_loss: -0.24727688584021712, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.005
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+), epoch: 10, lr: 0.005, regularizer: 0
+2020-04-16 00:50:49,698 - root - INFO - val_loss, 1874.1426068095068
+2020-04-16 00:51:48,707 - root - INFO - final_epoch_loss: -0.2592864651517331, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+), epoch: 15, lr: 0.0025, regularizer: 0
+2020-04-16 00:53:35,415 - root - INFO - val_loss, 1812.600740664812
+2020-04-16 00:53:35,415 - root - INFO - DONE
