@@ -14,6 +14,7 @@ from Train_Validate import model_validate
 from LSTM_NN_prob_model import LSTM_NN
 from utils import load_data
 
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--optimizer', '-o', action='store', default='sgd', help='optimizer')
 parser.add_argument('--device', '-d', action='store', default='cuda:0', help='CUDA device index')
@@ -27,7 +28,7 @@ args.device = args.device if torch.cuda.is_available() and args.device else 'cpu
 
 
 today = date.today().strftime("%m%d%Y")
-logging.basicConfig(filename=f'lr_tuning_{today}_{args.name}.log.txt', level=logging.INFO,
+logging.basicConfig(filename=f'./log/lr_tuning_{today}_{args.name}.log', level=logging.INFO,
                              format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 logging.info('START')
@@ -38,7 +39,7 @@ logging.info(f'Arguments: optimizer : {args.optimizer} '
              f'- debug_mode : {args.debug}')
 
 # load data
-train_data,train_label = load_data('train_data.csv')
+train_data, train_label = load_data('train_data.csv')
 val_data, validation_label = load_data('validation_data.csv')
 
 # data scaling
@@ -53,7 +54,10 @@ val_data_normalized = scaler.transform(val_data)
 train_label_mormalized = scaler_label.transform(train_label)
 validation_label_mormalized = scaler_label.transform(validation_label)
 
-# main loop
+########################################################################################################################
+# main loop                                                                                                            #
+########################################################################################################################
+
 # define model paramters for training
 TRAIN_WINDOW = 24
 TRAIN_FORWARD = 12
@@ -119,10 +123,24 @@ for lr in lrs:
             logging.info(f'final_epoch_loss: {final_epoch_loss}, batch_size: {BATCH_SIZE}, train_window:{TRAIN_WINDOW}, '
                                         f'train_history{TRAIN_HISTORY}, train_forward: {TRAIN_FORWARD}, optimizer: {optimizer}, epoch: {epoch * (epoch_iter+1)}, lr: {current_lr}, regularizer: {regularizer}')
             # model validation
-            val_loss = model_validate(val_data_normalized, TRAIN_WINDOW, TRAIN_HISTORY, TRAIN_FORWARD, model, device, selected_feature, 0)
+            val_loss, val_pred = model_validate(val_data_normalized, TRAIN_WINDOW, TRAIN_HISTORY, TRAIN_FORWARD, model, device, selected_feature, 0)
+
             logging.info(f'val_loss, {val_loss}')
             print(f'val_loss, {val_loss}')
             current_lr /= 2
+
+            result_transformed = [[(scaler_label.inverse_transform(mean), scaler_label.inverse_transform(label))
+                                   for mean, sd, label in batch] for batch in val_pred]
+            mse_transformed = np.asarray([[np.square(mean - label).squeeze().tolist() for mean, label in batch]
+                                          for batch in result_transformed])
+            mse_transformed_hourly = [sum(mse_transformed[:, i]) / len(result_transformed) for i in range(TRAIN_FORWARD)]
+
+            print(result_transformed)
+            print(mse_transformed)
+            print(len(result_transformed))
+            print(mse_transformed_hourly)
+
+            logging.info(f'mse_transformed_hourly, {mse_transformed_hourly}')
 
 print('DONE')
 logging.info('DONE')

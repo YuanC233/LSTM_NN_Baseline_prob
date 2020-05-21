@@ -50,6 +50,7 @@ def model_validate(val_data_normalized, train_window, train_history, train_forwa
     val_batch = DataLoader(val_set, batch_size=1, shuffle=False, drop_last=True)
     max_tensor_len = train_window - 1
     val_single_loss = 0
+
     val_pred_all = []
     current_batch = tqdm(val_batch)
 
@@ -58,15 +59,20 @@ def model_validate(val_data_normalized, train_window, train_history, train_forwa
         model.init_hidden(1, cuda)
 
         if idx % 12 == 0:
+            if idx != 0:
+                val_pred_all.append(val_pred_batch)
+            val_pred_batch = []
             temp_tensor = feature_tensor
             temp_padded_tensor = pad_tensor(temp_tensor, len_tensor.squeeze().item(), max_tensor_len, cuda)
-
         else:
             temp_padded_tensor = pad_tensor(temp_tensor, len_tensor.squeeze().item(), max_tensor_len, cuda)
 
         with torch.no_grad():
 
             val_mean_pred, val_std_pred = model(temp_padded_tensor, exog_tensor, len_tensor, 1)
+            val_pred_batch.append((val_mean_pred.clone().detach().cpu().numpy(),
+                                 val_std_pred.clone().detach().cpu().numpy(),
+                                label_tensor.clone().detach().cpu().numpy()))
 
             loss_function = nn.MSELoss()
             single_loss = loss_function(val_mean_pred.squeeze(), label_tensor.squeeze())
@@ -75,10 +81,10 @@ def model_validate(val_data_normalized, train_window, train_history, train_forwa
             #val_pred_all.append((val_mean_pred.squeeze().item(), val_std_pred.squeeze().item()))
 
             #print(val_pred.unsqueeze(0).size(), exog_tensor.size())
-            temp_feature = torch.cat((val_mean_pred.unsqueeze(0), exog_tensor), axis=2)
+            temp_feature = torch.cat((val_mean_pred.unsqueeze(0), exog_tensor), dim=2)
 
             #print(temp_feature.size())
             #print(temp_tensor.size())
-            temp_tensor = torch.cat((temp_tensor, temp_feature), axis=1)
+            temp_tensor = torch.cat((temp_tensor, temp_feature), dim=1)
 
-    return val_single_loss
+    return val_single_loss, val_pred_all

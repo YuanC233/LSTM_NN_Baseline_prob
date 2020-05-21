@@ -4,6 +4,7 @@ from torch.utils.data import Dataset
 import torch.nn as nn
 import pandas as pd
 
+
 class DataHolder(Dataset):
     def __init__(self, feature, label, exog, dim, length, device):
         self.feature = feature
@@ -22,6 +23,7 @@ class DataHolder(Dataset):
 
     def __len__(self):
         return len(self.feature)
+
 
 def load_data(filepath):
     f = pd.read_csv(filepath)
@@ -87,7 +89,8 @@ def nn_create_val_inout_sequences(input_data, window, history, forward, feature,
     d = len(feature) + 1
     max_len = window - 1
 
-    for i in range(n - window):
+    # for i in range(n - window):  # with overlapping
+    for i in range(0, n - window, history + forward):  # without overlapping
         for j in range(0, forward):
             current_feature = input_data[i : i + history + j, [label] + feature]
             current_len = current_feature.shape[0]
