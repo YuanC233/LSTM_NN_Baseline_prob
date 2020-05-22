@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 class LSTM_NN(nn.Module):
-    def __init__(self, input_size=3, hidden_layer_size=20, hidden_nn_size=20, output_size=1, exog_size=5):
+    def __init__(self, input_size=3, hidden_layer_size=20, hidden_nn_size=20, output_size=1, exog_size=5, drop_rate=0.5):
         super().__init__()
         self.hidden_layer_size = hidden_layer_size
         self.input_size = input_size
@@ -19,6 +19,7 @@ class LSTM_NN(nn.Module):
 
         self.relu = nn.ReLU()
 
+        self.dropout = nn.Dropout(drop_rate)
         # two output layers, one for mean prediction and the other for variance prediction
         self.output_mean = nn.Linear(hidden_nn_size, output_size)
 
@@ -32,11 +33,11 @@ class LSTM_NN(nn.Module):
         input_seq = pack_padded_sequence(input_seq.view(batch_size, -1, self.input_size), length.view(batch_size),
                                          batch_first=True, enforce_sorted=False)
         lstm_out, self.hidden_cell = self.lstm(input_seq, self.hidden_cell)
-
         # self.hidden_cell[0] = pad_packed_sequence(lstm_out)[-1]
-        feature_seq = torch.cat((self.hidden_cell[0].view(batch_size, -1), exog_seq.view(batch_size, self.exog_size)),
+        feature_seq = torch.cat((self.dropout(self.hidden_cell[0].view(batch_size, -1)), exog_seq.view(batch_size, self.exog_size)),
                                 dim=1)
-        feature_seq = self.nn_hidden(feature_seq)
+        feature_seq = self.dropout(self.nn_hidden(feature_seq))
+
         feature_seq = self.relu(feature_seq)
 
         mean_pred = self.output_mean(feature_seq)

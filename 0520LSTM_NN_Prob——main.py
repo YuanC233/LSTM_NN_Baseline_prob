@@ -133,13 +133,8 @@ for lr in lrs:
                                    for mean, sd, label in batch] for batch in val_pred]
             mse_transformed = np.asarray([[np.square(mean - label).squeeze().tolist() for mean, label in batch]
                                           for batch in result_transformed])
+
             mse_transformed_hourly = [sum(mse_transformed[:, i]) / len(result_transformed) for i in range(TRAIN_FORWARD)]
-
-            print(result_transformed)
-            print(mse_transformed)
-            print(len(result_transformed))
-            print(mse_transformed_hourly)
-
             logging.info(f'mse_transformed_hourly, {mse_transformed_hourly}')
 
 print('DONE')

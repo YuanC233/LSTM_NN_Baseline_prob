@@ -1,0 +1,1178 @@
+2020-05-21 00:11:57,904 - root - INFO - START
+2020-05-21 00:11:57,904 - root - INFO - Arguments: optimizer : sgd - cuda_device : cpu- regularizer : Option_a- selected_features : 12345- debug_mode : False
+2020-05-21 00:11:57,954 - root - INFO - Max epoch is set to 50
+2020-05-21 00:11:57,955 - root - INFO - START TRAINING
+2020-05-21 00:11:57,955 - root - INFO - *******************************************
+2020-05-21 00:11:57,955 - root - INFO - Parameter Settings: 
+2020-05-21 00:11:57,955 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 00:11:57,955 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 00:11:57,955 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 00:11:57,955 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 00:11:57,955 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 00:11:57,956 - root - INFO - *******************************************
+2020-05-21 00:16:00,149 - root - INFO - START
+2020-05-21 00:16:00,149 - root - INFO - Arguments: optimizer : sgd - cuda_device : cpu- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 00:16:00,190 - root - INFO - Max epoch is set to 1
+2020-05-21 00:16:00,190 - root - INFO - START TRAINING
+2020-05-21 00:16:00,190 - root - INFO - *******************************************
+2020-05-21 00:16:00,190 - root - INFO - Parameter Settings: 
+2020-05-21 00:16:00,190 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 00:16:00,190 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 00:16:00,190 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 00:16:00,191 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 00:16:00,191 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 00:16:00,191 - root - INFO - *******************************************
+2020-05-21 00:16:03,456 - root - INFO - final_epoch_loss: 1.1421977508635748, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 00:16:06,945 - root - INFO - val_loss, 2576.610560349924
+2020-05-21 00:16:10,294 - root - INFO - final_epoch_loss: 1.0502063007581801, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 00:16:14,043 - root - INFO - val_loss, 3355.940818458703
+2020-05-21 00:16:17,368 - root - INFO - final_epoch_loss: 0.9463432289305187, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 00:16:20,816 - root - INFO - val_loss, 4090.9247132746495
+2020-05-21 00:16:24,101 - root - INFO - final_epoch_loss: 0.957668681939443, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 00:16:27,740 - root - INFO - val_loss, 4081.6735855686848
+2020-05-21 00:16:31,362 - root - INFO - final_epoch_loss: 0.8922978327387855, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 00:16:35,351 - root - INFO - val_loss, 5056.848853109283
+2020-05-21 00:16:39,193 - root - INFO - final_epoch_loss: 0.8644729625611078, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.1, regularizer: 0.001
+2020-05-21 00:16:42,969 - root - INFO - val_loss, 5190.3318550411495
+2020-05-21 00:16:46,754 - root - INFO - final_epoch_loss: 0.9115918505759466, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.2, regularizer: 0.0
+2020-05-21 00:16:50,839 - root - INFO - val_loss, 5885.760813718518
+2020-05-21 00:16:54,832 - root - INFO - final_epoch_loss: 1.1295947219644273, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.2, regularizer: 0.001
+2020-05-21 00:16:59,155 - root - INFO - val_loss, 2134.8637391997763
+2020-05-21 00:16:59,156 - root - INFO - DONE
+2020-05-21 01:32:08,222 - root - INFO - START
+2020-05-21 01:32:08,222 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:32:08,258 - root - INFO - Max epoch is set to 1
+2020-05-21 01:32:08,258 - root - INFO - START TRAINING
+2020-05-21 01:32:08,258 - root - INFO - *******************************************
+2020-05-21 01:32:08,258 - root - INFO - Parameter Settings: 
+2020-05-21 01:32:08,258 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:32:08,258 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:32:08,259 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:32:08,259 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:32:08,259 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:32:08,259 - root - INFO - *******************************************
+2020-05-21 01:32:13,805 - root - INFO - final_epoch_loss: 1.108093193599156, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:32:53,083 - root - INFO - START
+2020-05-21 01:32:53,084 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:32:53,111 - root - INFO - Max epoch is set to 1
+2020-05-21 01:32:53,112 - root - INFO - START TRAINING
+2020-05-21 01:32:53,112 - root - INFO - *******************************************
+2020-05-21 01:32:53,112 - root - INFO - Parameter Settings: 
+2020-05-21 01:32:53,112 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:32:53,112 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:32:53,112 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:32:53,113 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:32:53,113 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:32:53,113 - root - INFO - *******************************************
+2020-05-21 01:32:56,900 - root - INFO - final_epoch_loss: 1.1374749456133162, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:33:28,349 - root - INFO - START
+2020-05-21 01:33:28,349 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : False
+2020-05-21 01:33:28,378 - root - INFO - Max epoch is set to 50
+2020-05-21 01:33:28,378 - root - INFO - START TRAINING
+2020-05-21 01:33:28,378 - root - INFO - *******************************************
+2020-05-21 01:33:28,379 - root - INFO - Parameter Settings: 
+2020-05-21 01:33:28,379 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:33:28,379 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:33:28,379 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:33:28,379 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:33:28,379 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:33:28,379 - root - INFO - *******************************************
+2020-05-21 01:34:17,654 - root - INFO - START
+2020-05-21 01:34:17,655 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:34:17,682 - root - INFO - Max epoch is set to 1
+2020-05-21 01:34:17,683 - root - INFO - START TRAINING
+2020-05-21 01:34:17,683 - root - INFO - *******************************************
+2020-05-21 01:34:17,683 - root - INFO - Parameter Settings: 
+2020-05-21 01:34:17,683 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:34:17,683 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:34:17,684 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:34:17,684 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:34:17,684 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:34:17,684 - root - INFO - *******************************************
+2020-05-21 01:34:21,632 - root - INFO - final_epoch_loss: 1.0877666530155001, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:35:24,816 - root - INFO - START
+2020-05-21 01:35:24,816 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:35:24,846 - root - INFO - Max epoch is set to 1
+2020-05-21 01:35:24,847 - root - INFO - START TRAINING
+2020-05-21 01:35:24,847 - root - INFO - *******************************************
+2020-05-21 01:35:24,847 - root - INFO - Parameter Settings: 
+2020-05-21 01:35:24,847 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:35:24,847 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:35:24,848 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:35:24,848 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:35:24,848 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:35:24,848 - root - INFO - *******************************************
+2020-05-21 01:35:28,940 - root - INFO - final_epoch_loss: 1.0910958789643788, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:38:09,115 - root - INFO - START
+2020-05-21 01:38:09,115 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:38:09,144 - root - INFO - Max epoch is set to 1
+2020-05-21 01:38:09,144 - root - INFO - START TRAINING
+2020-05-21 01:38:09,144 - root - INFO - *******************************************
+2020-05-21 01:38:09,144 - root - INFO - Parameter Settings: 
+2020-05-21 01:38:09,144 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:38:09,145 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:38:09,145 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:38:09,145 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:38:09,145 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:38:09,145 - root - INFO - *******************************************
+2020-05-21 01:38:13,242 - root - INFO - final_epoch_loss: 1.1920346702848161, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:41:07,540 - root - INFO - START
+2020-05-21 01:41:07,540 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:41:07,569 - root - INFO - Max epoch is set to 1
+2020-05-21 01:41:07,570 - root - INFO - START TRAINING
+2020-05-21 01:41:07,570 - root - INFO - *******************************************
+2020-05-21 01:41:07,570 - root - INFO - Parameter Settings: 
+2020-05-21 01:41:07,570 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:41:07,570 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:41:07,570 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:41:07,571 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:41:07,571 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:41:07,571 - root - INFO - *******************************************
+2020-05-21 01:41:11,576 - root - INFO - final_epoch_loss: 1.1392441931225004, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:41:11,799 - root - INFO - val_loss, 276.33920127153397
+2020-05-21 01:43:42,495 - root - INFO - START
+2020-05-21 01:43:42,495 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:43:42,523 - root - INFO - Max epoch is set to 1
+2020-05-21 01:43:42,523 - root - INFO - START TRAINING
+2020-05-21 01:43:42,523 - root - INFO - *******************************************
+2020-05-21 01:43:42,524 - root - INFO - Parameter Settings: 
+2020-05-21 01:43:42,524 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:43:42,524 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:43:42,524 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:43:42,524 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:43:42,524 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:43:42,524 - root - INFO - *******************************************
+2020-05-21 01:43:46,645 - root - INFO - final_epoch_loss: 1.1445542063031877, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:43:46,864 - root - INFO - val_loss, 252.4344876408577
+2020-05-21 01:47:20,733 - root - INFO - START
+2020-05-21 01:47:20,733 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:47:20,775 - root - INFO - Max epoch is set to 1
+2020-05-21 01:47:20,775 - root - INFO - START TRAINING
+2020-05-21 01:47:20,775 - root - INFO - *******************************************
+2020-05-21 01:47:20,776 - root - INFO - Parameter Settings: 
+2020-05-21 01:47:20,776 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:47:20,776 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:47:20,776 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:47:20,776 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:47:20,776 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:47:20,776 - root - INFO - *******************************************
+2020-05-21 01:47:24,789 - root - INFO - final_epoch_loss: 1.0443346528779893, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:47:24,998 - root - INFO - val_loss, 311.5366875529289
+2020-05-21 01:49:28,399 - root - INFO - START
+2020-05-21 01:49:28,399 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:49:28,431 - root - INFO - Max epoch is set to 1
+2020-05-21 01:49:28,431 - root - INFO - START TRAINING
+2020-05-21 01:49:28,431 - root - INFO - *******************************************
+2020-05-21 01:49:28,431 - root - INFO - Parameter Settings: 
+2020-05-21 01:49:28,431 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:49:28,432 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:49:28,432 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:49:28,432 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:49:28,432 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:49:28,432 - root - INFO - *******************************************
+2020-05-21 01:49:32,472 - root - INFO - final_epoch_loss: 1.0915342909949166, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:49:32,691 - root - INFO - val_loss, 268.4748970270157
+2020-05-21 01:49:34,107 - root - INFO - final_epoch_loss: 1.0611277506465004, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 01:49:34,346 - root - INFO - val_loss, 292.03436505794525
+2020-05-21 01:49:35,870 - root - INFO - final_epoch_loss: 0.9833877029873076, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 01:49:36,076 - root - INFO - val_loss, 342.94458067417145
+2020-05-21 01:49:37,642 - root - INFO - final_epoch_loss: 1.0318150122960408, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 01:49:37,887 - root - INFO - val_loss, 334.3737115263939
+2020-05-21 01:49:39,317 - root - INFO - final_epoch_loss: 0.9014439497675214, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 01:49:39,549 - root - INFO - val_loss, 397.62504732608795
+2020-05-21 01:49:40,948 - root - INFO - final_epoch_loss: 0.896486500898997, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.1, regularizer: 0.001
+2020-05-21 01:49:41,174 - root - INFO - val_loss, 419.25852715969086
+2020-05-21 01:49:42,558 - root - INFO - final_epoch_loss: 0.8169360444659278, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.2, regularizer: 0.0
+2020-05-21 01:49:42,772 - root - INFO - val_loss, 919.465814113617
+2020-05-21 01:49:44,099 - root - INFO - final_epoch_loss: 0.8588975398313432, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.2, regularizer: 0.001
+2020-05-21 01:49:44,327 - root - INFO - val_loss, 511.9985008239746
+2020-05-21 01:49:44,359 - root - INFO - DONE
+2020-05-21 01:53:59,463 - root - INFO - START
+2020-05-21 01:53:59,463 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:53:59,492 - root - INFO - Max epoch is set to 1
+2020-05-21 01:53:59,492 - root - INFO - START TRAINING
+2020-05-21 01:53:59,492 - root - INFO - *******************************************
+2020-05-21 01:53:59,492 - root - INFO - Parameter Settings: 
+2020-05-21 01:53:59,492 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:53:59,493 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:53:59,493 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:53:59,493 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:53:59,493 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:53:59,493 - root - INFO - *******************************************
+2020-05-21 01:54:03,492 - root - INFO - final_epoch_loss: 1.144423240707034, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:54:57,673 - root - INFO - START
+2020-05-21 01:54:57,673 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:54:57,701 - root - INFO - Max epoch is set to 1
+2020-05-21 01:54:57,701 - root - INFO - START TRAINING
+2020-05-21 01:54:57,702 - root - INFO - *******************************************
+2020-05-21 01:54:57,702 - root - INFO - Parameter Settings: 
+2020-05-21 01:54:57,702 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:54:57,702 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:54:57,702 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:54:57,702 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:54:57,702 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:54:57,703 - root - INFO - *******************************************
+2020-05-21 01:55:01,444 - root - INFO - final_epoch_loss: 1.0364963838032313, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:55:01,664 - root - INFO - val_loss, 302.3863989710808
+2020-05-21 01:55:02,962 - root - INFO - final_epoch_loss: 1.1430262554259527, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 01:55:03,181 - root - INFO - val_loss, 269.3244624733925
+2020-05-21 01:55:04,461 - root - INFO - final_epoch_loss: 0.9928090061460223, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 01:55:04,686 - root - INFO - val_loss, 360.22123169898987
+2020-05-21 01:55:05,946 - root - INFO - final_epoch_loss: 0.9620208541552225, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 01:55:06,204 - root - INFO - val_loss, 375.86127400398254
+2020-05-21 01:55:07,471 - root - INFO - final_epoch_loss: 0.9247274427186876, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 01:55:07,676 - root - INFO - val_loss, 381.621994137764
+2020-05-21 01:55:08,957 - root - INFO - final_epoch_loss: 0.9252412148884365, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.1, regularizer: 0.001
+2020-05-21 01:55:09,201 - root - INFO - val_loss, 408.9099187850952
+2020-05-21 01:55:10,551 - root - INFO - final_epoch_loss: 0.9362263253756932, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.2, regularizer: 0.0
+2020-05-21 01:55:10,760 - root - INFO - val_loss, 502.00664162635803
+2020-05-21 01:55:12,219 - root - INFO - final_epoch_loss: 0.8147811520667303, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.2, regularizer: 0.001
+2020-05-21 01:55:12,468 - root - INFO - val_loss, 568.5986626148224
+2020-05-21 01:55:12,498 - root - INFO - DONE
+2020-05-21 01:57:19,398 - root - INFO - START
+2020-05-21 01:57:19,398 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 01:57:19,430 - root - INFO - Max epoch is set to 1
+2020-05-21 01:57:19,430 - root - INFO - START TRAINING
+2020-05-21 01:57:19,431 - root - INFO - *******************************************
+2020-05-21 01:57:19,431 - root - INFO - Parameter Settings: 
+2020-05-21 01:57:19,431 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 01:57:19,431 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 01:57:19,431 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 01:57:19,432 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 01:57:19,432 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 01:57:19,432 - root - INFO - *******************************************
+2020-05-21 01:57:23,470 - root - INFO - final_epoch_loss: 1.0908051303454809, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 01:57:23,685 - root - INFO - val_loss, 266.47228330373764
+2020-05-21 01:57:25,113 - root - INFO - final_epoch_loss: 1.0646880041985285, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 01:57:25,360 - root - INFO - val_loss, 279.1253371834755
+2020-05-21 01:57:26,947 - root - INFO - final_epoch_loss: 0.9925558907645089, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 01:57:27,171 - root - INFO - val_loss, 321.7310777902603
+2020-05-21 01:57:28,643 - root - INFO - final_epoch_loss: 1.00447435322262, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 01:57:28,924 - root - INFO - val_loss, 336.06201231479645
+2020-05-21 01:57:30,370 - root - INFO - final_epoch_loss: 0.8788417975107828, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 01:57:30,586 - root - INFO - val_loss, 416.41722083091736
+2020-05-21 01:57:31,994 - root - INFO - final_epoch_loss: 0.9737224749156407, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.1, regularizer: 0.001
+2020-05-21 01:57:32,221 - root - INFO - val_loss, 357.3088935613632
+2020-05-21 01:57:33,563 - root - INFO - final_epoch_loss: 0.9700734615325928, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.2, regularizer: 0.0
+2020-05-21 01:57:33,800 - root - INFO - val_loss, 472.5059220790863
+2020-05-21 01:57:35,199 - root - INFO - final_epoch_loss: 0.9782271810940334, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.2, regularizer: 0.001
+2020-05-21 01:57:35,426 - root - INFO - val_loss, 221.0529302060604
+2020-05-21 01:57:35,440 - root - INFO - DONE
+2020-05-21 02:00:44,603 - root - INFO - START
+2020-05-21 02:00:44,604 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 02:00:44,633 - root - INFO - Max epoch is set to 1
+2020-05-21 02:00:44,634 - root - INFO - START TRAINING
+2020-05-21 02:00:44,634 - root - INFO - *******************************************
+2020-05-21 02:00:44,634 - root - INFO - Parameter Settings: 
+2020-05-21 02:00:44,634 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:00:44,634 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:00:44,635 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:00:44,635 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:00:44,635 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:00:44,635 - root - INFO - *******************************************
+2020-05-21 02:00:48,844 - root - INFO - final_epoch_loss: 1.0564025725637163, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 02:00:49,083 - root - INFO - val_loss, 278.20516979694366
+2020-05-21 02:00:50,481 - root - INFO - final_epoch_loss: 1.148276760464623, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 02:00:50,683 - root - INFO - val_loss, 251.15257400274277
+2020-05-21 02:00:52,000 - root - INFO - final_epoch_loss: 1.0510667023204623, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 02:00:52,266 - root - INFO - val_loss, 317.51198118925095
+2020-05-21 02:00:59,833 - root - INFO - START
+2020-05-21 02:00:59,834 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 02:00:59,862 - root - INFO - Max epoch is set to 1
+2020-05-21 02:00:59,862 - root - INFO - START TRAINING
+2020-05-21 02:00:59,863 - root - INFO - *******************************************
+2020-05-21 02:00:59,863 - root - INFO - Parameter Settings: 
+2020-05-21 02:00:59,863 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:00:59,863 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:00:59,863 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:00:59,863 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:00:59,863 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:00:59,863 - root - INFO - *******************************************
+2020-05-21 02:01:03,862 - root - INFO - final_epoch_loss: 1.0999130180903844, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 02:01:04,130 - root - INFO - val_loss, 278.3505277633667
+2020-05-21 02:01:05,516 - root - INFO - final_epoch_loss: 1.0787389278411865, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 02:01:05,744 - root - INFO - val_loss, 306.3480107784271
+2020-05-21 02:01:16,320 - root - INFO - START
+2020-05-21 02:01:16,320 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 02:01:16,349 - root - INFO - Max epoch is set to 1
+2020-05-21 02:01:16,349 - root - INFO - START TRAINING
+2020-05-21 02:01:16,349 - root - INFO - *******************************************
+2020-05-21 02:01:16,349 - root - INFO - Parameter Settings: 
+2020-05-21 02:01:16,350 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:01:16,350 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:01:16,350 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:01:16,350 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:01:16,350 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:01:16,350 - root - INFO - *******************************************
+2020-05-21 02:01:20,298 - root - INFO - final_epoch_loss: 1.1554873557317824, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 02:01:20,583 - root - INFO - val_loss, 280.1734749674797
+2020-05-21 02:01:42,876 - root - INFO - START
+2020-05-21 02:01:42,876 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 02:01:42,906 - root - INFO - Max epoch is set to 1
+2020-05-21 02:01:42,907 - root - INFO - START TRAINING
+2020-05-21 02:01:42,907 - root - INFO - *******************************************
+2020-05-21 02:01:42,907 - root - INFO - Parameter Settings: 
+2020-05-21 02:01:42,907 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:01:42,907 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:01:42,907 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:01:42,908 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:01:42,908 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:01:42,908 - root - INFO - *******************************************
+2020-05-21 02:01:46,802 - root - INFO - final_epoch_loss: 1.058579941590627, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 02:01:47,043 - root - INFO - val_loss, 293.5615555047989
+2020-05-21 02:01:48,499 - root - INFO - final_epoch_loss: 1.0942067362013317, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 02:01:48,731 - root - INFO - val_loss, 275.08440935611725
+2020-05-21 02:01:50,071 - root - INFO - final_epoch_loss: 0.9742300992920285, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 02:01:50,284 - root - INFO - val_loss, 342.08527767658234
+2020-05-21 02:01:51,595 - root - INFO - final_epoch_loss: 1.0342296049708413, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 02:01:51,807 - root - INFO - val_loss, 282.66430747509
+2020-05-21 02:01:53,175 - root - INFO - final_epoch_loss: 0.9372352900959197, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 02:01:53,409 - root - INFO - val_loss, 392.98730742931366
+2020-05-21 02:04:03,652 - root - INFO - START
+2020-05-21 02:04:03,652 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : True
+2020-05-21 02:04:03,691 - root - INFO - Max epoch is set to 1
+2020-05-21 02:04:03,691 - root - INFO - START TRAINING
+2020-05-21 02:04:03,691 - root - INFO - *******************************************
+2020-05-21 02:04:03,691 - root - INFO - Parameter Settings: 
+2020-05-21 02:04:03,692 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:04:03,692 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:04:03,692 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:04:03,692 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:04:03,692 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:04:03,692 - root - INFO - *******************************************
+2020-05-21 02:04:07,892 - root - INFO - final_epoch_loss: 1.1449680924415588, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.01, regularizer: 0.0
+2020-05-21 02:04:08,139 - root - INFO - val_loss, 247.1471969485283
+2020-05-21 02:04:09,534 - root - INFO - final_epoch_loss: 1.1397957972117834, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.01, regularizer: 0.001
+2020-05-21 02:04:09,783 - root - INFO - val_loss, 252.2709030508995
+2020-05-21 02:04:11,139 - root - INFO - final_epoch_loss: 0.9882212224460784, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.05, regularizer: 0.0
+2020-05-21 02:04:11,352 - root - INFO - val_loss, 359.0156110525131
+2020-05-21 02:04:12,694 - root - INFO - final_epoch_loss: 1.0220250146729606, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.05, regularizer: 0.001
+2020-05-21 02:04:12,948 - root - INFO - val_loss, 315.68127965927124
+2020-05-21 02:04:14,280 - root - INFO - final_epoch_loss: 0.8882460338728768, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.1, regularizer: 0.0
+2020-05-21 02:04:14,489 - root - INFO - val_loss, 431.29934453964233
+2020-05-21 02:04:15,811 - root - INFO - final_epoch_loss: 0.8637151405924842, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.1
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.1, regularizer: 0.001
+2020-05-21 02:04:16,017 - root - INFO - val_loss, 428.6933732032776
+2020-05-21 02:04:17,326 - root - INFO - final_epoch_loss: 0.9704103072484335, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 1, lr: 0.2, regularizer: 0.0
+2020-05-21 02:04:17,531 - root - INFO - val_loss, 470.3450951576233
+2020-05-21 02:04:18,902 - root - INFO - final_epoch_loss: 1.214378311520531, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.2
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 1, lr: 0.2, regularizer: 0.001
+2020-05-21 02:04:19,110 - root - INFO - val_loss, 187.33740118145943
+2020-05-21 02:04:19,128 - root - INFO - DONE
+2020-05-21 02:04:46,026 - root - INFO - START
+2020-05-21 02:04:46,026 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : False
+2020-05-21 02:04:46,054 - root - INFO - Max epoch is set to 50
+2020-05-21 02:04:46,054 - root - INFO - START TRAINING
+2020-05-21 02:04:46,055 - root - INFO - *******************************************
+2020-05-21 02:04:46,055 - root - INFO - Parameter Settings: 
+2020-05-21 02:04:46,055 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:04:46,055 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:04:46,055 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:04:46,055 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:04:46,055 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:04:46,056 - root - INFO - *******************************************
+2020-05-21 02:05:47,047 - root - INFO - final_epoch_loss: 0.1390474905645011, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.01, regularizer: 0.0
+2020-05-21 02:05:52,785 - root - INFO - val_loss, 333.2903217429649
+2020-05-21 02:07:49,750 - root - INFO - START
+2020-05-21 02:07:49,751 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : False
+2020-05-21 02:07:49,790 - root - INFO - Max epoch is set to 50
+2020-05-21 02:07:49,791 - root - INFO - START TRAINING
+2020-05-21 02:07:49,791 - root - INFO - *******************************************
+2020-05-21 02:07:49,791 - root - INFO - Parameter Settings: 
+2020-05-21 02:07:49,791 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:07:49,791 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:07:49,791 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:07:49,792 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:07:49,792 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:07:49,792 - root - INFO - *******************************************
+2020-05-21 02:08:47,221 - root - INFO - final_epoch_loss: 0.13985713079123746, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.01, regularizer: 0.0
+2020-05-21 02:08:52,321 - root - INFO - val_loss, 320.47654451633196
+2020-05-21 02:09:13,962 - root - INFO - START
+2020-05-21 02:09:13,962 - root - INFO - Arguments: optimizer : sgd - cuda_device : cuda:0- regularizer : Option_a- selected_features : 12345- debug_mode : False
+2020-05-21 02:09:13,991 - root - INFO - Max epoch is set to 50
+2020-05-21 02:09:13,991 - root - INFO - START TRAINING
+2020-05-21 02:09:13,991 - root - INFO - *******************************************
+2020-05-21 02:09:13,991 - root - INFO - Parameter Settings: 
+2020-05-21 02:09:13,991 - root - INFO - LRs = [0.01, 0.05, 0.1, 0.2]
+2020-05-21 02:09:13,992 - root - INFO - Optimizers = {'adam': <class 'torch.optim.adam.Adam'>, 'sgd': <class 'torch.optim.sgd.SGD'>}
+2020-05-21 02:09:13,992 - root - INFO - Hidden_layer_sizes = [48, 64, 80, 96]
+2020-05-21 02:09:13,992 - root - INFO - Hidden_nn_size = [16, 32, 48]
+2020-05-21 02:09:13,992 - root - INFO - Regularizers = [0.0, 0.001]
+2020-05-21 02:09:13,992 - root - INFO - *******************************************
+2020-05-21 02:10:07,052 - root - INFO - final_epoch_loss: 0.13901528498189297, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.01, regularizer: 0.0
+2020-05-21 02:10:12,223 - root - INFO - val_loss, 307.6320489618975
+2020-05-21 02:11:08,236 - root - INFO - final_epoch_loss: 0.11692283720461817, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.005
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.005, regularizer: 0.0
+2020-05-21 02:11:13,717 - root - INFO - val_loss, 318.63146624813214
+2020-05-21 02:12:11,329 - root - INFO - final_epoch_loss: 0.10795972939238802, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.0025, regularizer: 0.0
+2020-05-21 02:12:16,861 - root - INFO - val_loss, 321.72235769845184
+2020-05-21 02:13:13,634 - root - INFO - final_epoch_loss: 0.10466820759235052, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.00125, regularizer: 0.0
+2020-05-21 02:13:18,921 - root - INFO - val_loss, 321.6771917151752
+2020-05-21 02:14:15,571 - root - INFO - final_epoch_loss: 0.10291683926337442, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.000625, regularizer: 0.0
+2020-05-21 02:14:20,752 - root - INFO - val_loss, 318.9507794219967
+2020-05-21 02:15:17,544 - root - INFO - final_epoch_loss: 0.10190922639210893, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.0003125, regularizer: 0.0
+2020-05-21 02:15:22,704 - root - INFO - val_loss, 321.0056603332824
+2020-05-21 02:16:20,509 - root - INFO - final_epoch_loss: 0.10150403078480423, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.00015625, regularizer: 0.0
+2020-05-21 02:16:25,795 - root - INFO - val_loss, 317.7770530985622
+2020-05-21 02:17:22,556 - root - INFO - final_epoch_loss: 0.1012850735721646, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 7.8125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 7.8125e-05, regularizer: 0.0
+2020-05-21 02:17:27,951 - root - INFO - val_loss, 319.50305976200025
+2020-05-21 02:18:24,381 - root - INFO - final_epoch_loss: 0.1011407464833042, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 3.90625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 3.90625e-05, regularizer: 0.0
+2020-05-21 02:18:29,625 - root - INFO - val_loss, 320.3608034914042
+2020-05-21 02:19:26,167 - root - INFO - final_epoch_loss: 0.10130891974480973, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 1.953125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 1.953125e-05, regularizer: 0.0
+2020-05-21 02:19:31,638 - root - INFO - val_loss, 320.09704435114105
+2020-05-21 02:19:31,885 - root - INFO - mse_transformed_hourly, [3.953729504608734, 4.602181768417647, 6.089733904829234, 8.631584198587353, 13.973773255957722, 11.259624521829638, 9.415144621872503, 8.1058061713957, 10.458481622230616, 7.694094395759508, 10.948232493871075, 9.286578507246816]
+2020-05-21 02:20:27,885 - root - INFO - final_epoch_loss: 0.14166238424780814, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.01, regularizer: 0.001
+2020-05-21 02:20:33,204 - root - INFO - val_loss, 310.8832886771336
+2020-05-21 02:21:29,117 - root - INFO - final_epoch_loss: 0.12146651209332049, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.005
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.005, regularizer: 0.001
+2020-05-21 02:21:34,259 - root - INFO - val_loss, 340.79634604126045
+2020-05-21 02:22:29,426 - root - INFO - final_epoch_loss: 0.1147189452715674, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.0025, regularizer: 0.001
+2020-05-21 02:22:34,412 - root - INFO - val_loss, 323.61632212277976
+2020-05-21 02:23:29,574 - root - INFO - final_epoch_loss: 0.11174363974297129, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.00125, regularizer: 0.001
+2020-05-21 02:23:34,629 - root - INFO - val_loss, 317.2696866090488
+2020-05-21 02:24:30,578 - root - INFO - final_epoch_loss: 0.1098909545660349, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.000625, regularizer: 0.001
+2020-05-21 02:24:36,043 - root - INFO - val_loss, 326.6421004793532
+2020-05-21 02:25:33,462 - root - INFO - final_epoch_loss: 0.10896758734688697, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.0003125, regularizer: 0.001
+2020-05-21 02:25:39,164 - root - INFO - val_loss, 321.57283245888186
+2020-05-21 02:26:37,960 - root - INFO - final_epoch_loss: 0.10863794140686686, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.00015625, regularizer: 0.001
+2020-05-21 02:26:43,390 - root - INFO - val_loss, 322.15717841967705
+2020-05-21 02:27:40,485 - root - INFO - final_epoch_loss: 0.10857042583896295, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 7.8125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 7.8125e-05, regularizer: 0.001
+2020-05-21 02:27:45,814 - root - INFO - val_loss, 320.34611975831467
+2020-05-21 02:28:43,521 - root - INFO - final_epoch_loss: 0.10841129640144795, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 3.90625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 45, lr: 3.90625e-05, regularizer: 0.001
+2020-05-21 02:28:48,981 - root - INFO - val_loss, 321.2035054225904
+2020-05-21 02:29:46,398 - root - INFO - final_epoch_loss: 0.10814350249662304, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 1.953125e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 50, lr: 1.953125e-05, regularizer: 0.001
+2020-05-21 02:29:51,660 - root - INFO - val_loss, 321.64655134273414
+2020-05-21 02:29:51,930 - root - INFO - mse_transformed_hourly, [4.117114842999226, 4.750350566282758, 6.2327748927738025, 9.148037720175772, 13.77665535777385, 11.322826294776837, 9.118763143926824, 7.988500399706613, 10.494147130617225, 7.5386577211214565, 11.154845694240578, 9.277169348035116]
+2020-05-21 02:30:49,105 - root - INFO - final_epoch_loss: 0.1494743943721339, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 5, lr: 0.05, regularizer: 0.0
+2020-05-21 02:30:54,625 - root - INFO - val_loss, 332.9995037850017
+2020-05-21 02:31:51,733 - root - INFO - final_epoch_loss: 0.0851911615073398, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 10, lr: 0.025, regularizer: 0.0
+2020-05-21 02:31:57,101 - root - INFO - val_loss, 369.7335658866181
+2020-05-21 02:32:55,597 - root - INFO - final_epoch_loss: 0.06559154064932893, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 15, lr: 0.0125, regularizer: 0.0
+2020-05-21 02:33:00,995 - root - INFO - val_loss, 336.6404826388534
+2020-05-21 02:33:59,674 - root - INFO - final_epoch_loss: 0.05600991853383146, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 20, lr: 0.00625, regularizer: 0.0
+2020-05-21 02:34:05,306 - root - INFO - val_loss, 338.12988843411813
+2020-05-21 02:35:03,343 - root - INFO - final_epoch_loss: 0.051631696565461814, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 25, lr: 0.003125, regularizer: 0.0
+2020-05-21 02:35:08,664 - root - INFO - val_loss, 325.47055525276676
+2020-05-21 02:36:05,937 - root - INFO - final_epoch_loss: 0.04947293854518971, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 30, lr: 0.0015625, regularizer: 0.0
+2020-05-21 02:36:11,436 - root - INFO - val_loss, 321.77684732591996
+2020-05-21 02:37:09,048 - root - INFO - final_epoch_loss: 0.04827761798920228, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 35, lr: 0.00078125, regularizer: 0.0
+2020-05-21 02:37:14,775 - root - INFO - val_loss, 322.0897872538567
+2020-05-21 02:38:12,202 - root - INFO - final_epoch_loss: 0.04749893811079457, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 40, lr: 0.000390625, regularizer: 0.0
+2020-05-21 02:38:17,582 - root - INFO - val_loss, 327.24790854150007
+2020-05-21 02:39:14,500 - root - INFO - final_epoch_loss: 0.04734306664202158, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0001953125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 45, lr: 0.0001953125, regularizer: 0.0
+2020-05-21 02:39:20,163 - root - INFO - val_loss, 326.10569654889105
+2020-05-21 02:40:17,184 - root - INFO - final_epoch_loss: 0.04689211739946298, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 9.765625e-05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.0
+), epoch: 50, lr: 9.765625e-05, regularizer: 0.0
+2020-05-21 02:40:22,777 - root - INFO - val_loss, 325.19786260528133
+2020-05-21 02:40:23,022 - root - INFO - mse_transformed_hourly, [4.226835274570506, 4.946480844081822, 6.725217588307293, 9.580261331546113, 14.263928932236043, 11.180881722993915, 9.397074264849437, 7.882343497115269, 10.110932641498257, 7.2989011866692115, 10.964079641939689, 9.512348198916374]
+2020-05-21 02:41:20,032 - root - INFO - final_epoch_loss: 0.14360148115830204, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.05
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 5, lr: 0.05, regularizer: 0.001
+2020-05-21 02:41:25,422 - root - INFO - val_loss, 358.3673166498872
+2020-05-21 02:42:22,624 - root - INFO - final_epoch_loss: 0.09252869812889566, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.025
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 10, lr: 0.025, regularizer: 0.001
+2020-05-21 02:42:27,921 - root - INFO - val_loss, 308.3147618707078
+2020-05-21 02:43:25,670 - root - INFO - final_epoch_loss: 0.07606157343363083, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 15, lr: 0.0125, regularizer: 0.001
+2020-05-21 02:43:31,175 - root - INFO - val_loss, 310.45367524255516
+2020-05-21 02:44:29,045 - root - INFO - final_epoch_loss: 0.06966111755965254, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 20, lr: 0.00625, regularizer: 0.001
+2020-05-21 02:44:34,310 - root - INFO - val_loss, 315.939591013046
+2020-05-21 02:45:31,332 - root - INFO - final_epoch_loss: 0.06538992590479208, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.003125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 25, lr: 0.003125, regularizer: 0.001
+2020-05-21 02:45:36,700 - root - INFO - val_loss, 312.7393330201672
+2020-05-21 02:46:33,780 - root - INFO - final_epoch_loss: 0.063624710699284, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.0015625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 30, lr: 0.0015625, regularizer: 0.001
+2020-05-21 02:46:39,072 - root - INFO - val_loss, 320.5877592883159
+2020-05-21 02:47:37,051 - root - INFO - final_epoch_loss: 0.0629322389121077, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.00078125
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 35, lr: 0.00078125, regularizer: 0.001
+2020-05-21 02:47:42,435 - root - INFO - val_loss, 315.00758058971985
+2020-05-21 02:48:38,422 - root - INFO - final_epoch_loss: 0.06248009389262442, batch_size: 128, train_window:24, train_history12, train_forward: 12, optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.000390625
+    momentum: 0
+    nesterov: False
+    weight_decay: 0.001
+), epoch: 40, lr: 0.000390625, regularizer: 0.001
+2020-05-21 02:48:43,561 - root - INFO - val_loss, 314.12385622456054

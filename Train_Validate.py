@@ -17,7 +17,8 @@ def train_model(train_data_normalized, batch_size, train_window, train_history, 
     batch_train_data = DataHolder(train_feature, train_label, train_exog, 1, train_len, cuda)
     train_batches = DataLoader(batch_train_data, batch_size=batch_size, shuffle=True, drop_last=True)
 
-    loss_function = model.loss_function
+    # loss_function = model.loss_function
+    loss_function = nn.MSELoss()
     model_optimizer = optimizer
 
     for i in range(epochs):
@@ -30,7 +31,8 @@ def train_model(train_data_normalized, batch_size, train_window, train_history, 
             model_optimizer.zero_grad()
 
             mean_pred, std_pred = model(feature_tensor, exog_tensor, len_tensor, batch_size)
-            single_loss = loss_function(mean_pred.squeeze(), std_pred.squeeze(), label_tensor, cuda)
+            #single_loss = loss_function(mean_pred.squeeze(), std_pred.squeeze(), label_tensor, cuda)
+            single_loss = loss_function(mean_pred.squeeze(), label_tensor)
             single_loss.backward()
             model_optimizer.step()
             epoch_loss += single_loss.item()
@@ -53,6 +55,7 @@ def model_validate(val_data_normalized, train_window, train_history, train_forwa
 
     val_pred_all = []
     current_batch = tqdm(val_batch)
+    loss_function = nn.MSELoss()
 
     for idx, batch in enumerate(current_batch):
         feature_tensor, label_tensor, exog_tensor, len_tensor = batch
@@ -74,7 +77,6 @@ def model_validate(val_data_normalized, train_window, train_history, train_forwa
                                  val_std_pred.clone().detach().cpu().numpy(),
                                 label_tensor.clone().detach().cpu().numpy()))
 
-            loss_function = nn.MSELoss()
             single_loss = loss_function(val_mean_pred.squeeze(), label_tensor.squeeze())
 
             val_single_loss += single_loss.item()
