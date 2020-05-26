@@ -59,12 +59,12 @@ validation_label_mormalized = scaler_label.transform(validation_label)
 ########################################################################################################################
 
 # define model paramters for training
-TRAIN_WINDOW = 24
+TRAIN_WINDOW = 36
 TRAIN_FORWARD = 12
 TRAIN_HISTORY = TRAIN_WINDOW - TRAIN_FORWARD
 BATCH_SIZE = 128
 epoch = 5
-epoch_iters = 10
+epoch_iters = 5
 
 if args.debug:
     epoch = epoch_iters = 1
@@ -79,12 +79,12 @@ lrs = [0.01, 0.05, 0.1, 0.2]
 optimizers = {'adam': Adam, 'sgd': SGD}
 optimizer_type = optimizers[args.optimizer.lower()]
 
-feature_engr = {'12345': [1,2,3,4,5], '167': [1,2,3], '145': [1,4,5]} #TODO remove feature engr
+feature_engr = {'12345': [1,2,3,4,5], '167': [1,2,3], '145': [1,4,5]}
 selected_feature = feature_engr[args.select_features]
 num_feature_exog = len(selected_feature) + 1
 exog_size = len(selected_feature)
 
-regularizer_opts = {'a':[0.00, 0.001], 'b':[0.005, 0.01]}
+regularizer_opts = {'a':[0.00, 0.001], 'b':[0.002, 0.003]}
 regularizers = regularizer_opts[args.reg_opt.lower()]
 
 hidden_layer_sizes = [48, 64, 80, 96]
@@ -112,10 +112,17 @@ for lr in lrs:
         # model training
         current_lr = lr
 
-        model = LSTM_NN(input_size=num_feature_exog, hidden_layer_size=96, hidden_nn_size=48, output_size=1, exog_size=exog_size)
+        model = LSTM_NN(input_size=num_feature_exog, hidden_layer_size=48, hidden_nn_size=20, output_size=1, exog_size=exog_size, bidirectional=True)
+        print(f'model parameter size = {sum(p.numel() for p in model.parameters() if p.requires_grad)}')
         model.to(device)
+
+        optimizer = optimizer_type(filter(lambda p: p.requires_grad, model.parameters()), current_lr,
+                                   weight_decay=regularizer)
+
         for epoch_iter in range(epoch_iters):
-            optimizer = optimizer_type(filter(lambda p: p.requires_grad, model.parameters()), current_lr, weight_decay=regularizer)
+            if args.optimizer.lower() == 'sgd':
+                optimizer = optimizer_type(filter(lambda p: p.requires_grad, model.parameters()), current_lr,
+                                           weight_decay=regularizer)
             final_epoch_loss = train_model(train_data_normalized, BATCH_SIZE, TRAIN_WINDOW, TRAIN_HISTORY, TRAIN_FORWARD, model, optimizer, epoch, device, selected_feature, 0)
 
             print(f'final_epoch_loss: {final_epoch_loss}, batch_size: {BATCH_SIZE}, train_window:{TRAIN_WINDOW}, '
@@ -127,7 +134,8 @@ for lr in lrs:
 
             logging.info(f'val_loss, {val_loss}')
             print(f'val_loss, {val_loss}')
-            current_lr /= 2
+            if args.optimizer.lower() == 'sgd':
+                current_lr /= 2
 
             result_transformed = [[(scaler_label.inverse_transform(mean), scaler_label.inverse_transform(label))
                                    for mean, sd, label in batch] for batch in val_pred]
