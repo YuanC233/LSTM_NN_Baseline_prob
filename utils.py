@@ -89,8 +89,9 @@ def nn_create_val_inout_sequences(input_data, window, history, forward, feature,
     d = len(feature) + 1
     max_len = window - 1
 
+    step = forward
     # for i in range(n - window):  # with overlapping
-    for i in range(0, n - window, history + forward):  # without overlapping
+    for i in range(0, n - window, step):  # without overlapping
         for j in range(0, forward):
             current_feature = input_data[i : i + history + j, [label] + feature]
             current_len = current_feature.shape[0]
